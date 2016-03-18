@@ -77,6 +77,8 @@ RUN buildDeps='\
 
 
 VOLUME /usr/src/redmine/files
+VOLUME /usr/src/redmine/sqlite
+VOLUME /usr/src/redmine/config
 
 COPY docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
